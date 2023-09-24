@@ -1,0 +1,792 @@
+.headtop {
+  width: 100%;
+  background-color: #f0eee5;
+}
+.headtop > marquee {
+  border-bottom: 2px solid rgb(180, 173, 173);
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.headtop > header > .row {
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+}
+.headtop > header > .row > figure {
+  width: 40%;
+  height: 100%;
+  transition: 0.4s;
+}
+.headtop > header > .row > figure:hover {
+  opacity: 2;
+  transform: translateX(70px) scale(1.3);
+}
+.headtop > header > .row > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.headtop > header > .row > nav {
+  height: 100%;
+  width: 50%;
+  justify-content: end;
+}
+.headtop > header > .row > nav > ul {
+  height: 100%;
+}
+.headtop > header > .row > nav > ul > li {
+  width: auto;
+  height: 100%;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.headtop > header > .row > nav > ul > li::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  display: flex;
+  width: 0;
+  height: 3px;
+  background-color: #b9b58d;
+  transition: 1s;
+}
+.headtop > header > .row > nav > ul > li:nth-of-type(1)::after {
+  width: 100%;
+}
+.headtop > header > .row > nav > ul > li:not(:nth-of-type(1))::after {
+  opacity: 0;
+}
+.headtop > header > .row > nav > ul > li:not(:nth-of-type(1)):hover::after {
+  opacity: 1;
+  width: 100%;
+}
+.headtop > header > .row > nav > ul > li > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.headtop > header > .row > nav > ul > li:hover > .dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+.headtop > header > .row > nav > ul > li > .dropdown {
+  width: 200px;
+  height: auto;
+  background-color: #f0eee5;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 3;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+}
+.headtop > header > .row > nav > ul > li > .dropdown > li {
+  height: 50px;
+}
+.headtop > header > .row > nav > ul > li > .dropdown > li:hover {
+  background-color: #284b43;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.headtop > header > .row > nav > ul > li > .dropdown > li:hover > a {
+  color: white;
+}
+.headtop > header > .row > nav > ul > li > .dropdown > li > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.headtop > section {
+  width: 100%;
+}
+.headtop > section > .row {
+  width: 100%;
+}
+.headtop > section > .row > .row {
+  height: 80vh;
+  position: relative;
+}
+.headtop > section > .row > .row > * {
+  width: 100%;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.headtop > section > .row > .row:nth-of-type(1) {
+  padding: 20px 40px;
+  width: 60%;
+  background-image: url(img/headtop/11.jpg);
+  background-size: cover;
+  align-content: end;
+  justify-content: center;
+}
+.headtop > section > .row > .row:nth-of-type(1)::after {
+  background-color: rgba(0, 0, 0, 0.566);
+}
+.headtop > section > .row > .row:nth-of-type(1) > * {
+  margin-top: 20px;
+}
+.headtop > section > .row > .row:nth-of-type(1) > ul {
+  width: 100%;
+  justify-content: start;
+}
+.headtop > section > .row > .row:nth-of-type(1) > ul > li {
+  width: 150px;
+  height: 60px;
+  border: 2px solid white;
+  margin-left: 20px;
+  transition: 0.4s;
+}
+.headtop > section > .row > .row:nth-of-type(1) > ul > li:nth-of-type(1) {
+  margin-left: 0;
+}
+.headtop > section > .row > .row:nth-of-type(1) > ul > li:hover {
+  border: 5px solid white;
+}
+.headtop > section > .row > .row:nth-of-type(1) > ul > li:hover > a {
+  font-weight: bold;
+}
+.headtop > section > .row > .row:nth-of-type(1) > ul > li:nth-of-type(4) {
+  background-color: white;
+  transition: 0.5s;
+}
+.headtop > section > .row > .row:nth-of-type(1) > ul > li:nth-of-type(4):hover {
+  background-color: #bc3f31;
+}
+.headtop > section > .row > .row:nth-of-type(1) > ul > li:nth-of-type(4):hover > a > span:nth-of-type(1) {
+  top: -60px;
+  opacity: 0;
+  visibility: hidden;
+}
+.headtop > section > .row > .row:nth-of-type(1) > ul > li:nth-of-type(4):hover > a > span:nth-of-type(2) {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+  color: white;
+}
+.headtop > section > .row > .row:nth-of-type(1) > ul > li:nth-of-type(4) > a {
+  position: relative;
+}
+.headtop > section > .row > .row:nth-of-type(1) > ul > li:nth-of-type(4) > a > span {
+  width: 100%;
+  height: 100%;
+  color: black;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.headtop > section > .row > .row:nth-of-type(1) > ul > li:nth-of-type(4) > a > span:nth-of-type(1) {
+  top: 0;
+  left: 0;
+}
+.headtop > section > .row > .row:nth-of-type(1) > ul > li:nth-of-type(4) > a > span:nth-of-type(2) {
+  top: -60px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.headtop > section > .row > .row:nth-of-type(1) > ul > li > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headtop > section > .row > .row:nth-of-type(1) > ul > li > input {
+  width: 100%;
+  height: 100%;
+  font-size: inherit;
+  background-color: rgba(252, 252, 252, 0);
+  color: white;
+}
+.headtop > section > .row > .row:nth-of-type(1) > ul > li > input::-moz-placeholder {
+  color: white;
+}
+.headtop > section > .row > .row:nth-of-type(1) > ul > li > input::placeholder {
+  color: white;
+}
+.headtop > section > .row > .row:nth-of-type(1) > P {
+  width: 100%;
+  margin-top: 20px;
+}
+.headtop > section > .row > .row:nth-of-type(2) {
+  width: 40%;
+  background-image: url(img/headtop/2.jpg);
+  background-size: cover;
+  padding: 20px 40px;
+  justify-content: center;
+}
+.headtop > section > .row > .row:nth-of-type(2)::after {
+  background-color: rgba(2, 52, 39, 0.8823529412);
+}
+.headtop > section > .row > .row:nth-of-type(2) > strong {
+  font-size: 50px;
+}
+.headtop > section > .row > .row:nth-of-type(2) > p {
+  font-size: 20px;
+  text-align: justify;
+}
+.headtop > section > .row > .row:nth-of-type(2) > a {
+  width: 250px;
+  height: 60px;
+  border: 2px solid white;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.headtop > section > .row > .row:nth-of-type(2) > a:hover {
+  border: 5px solid white;
+  font-weight: bold;
+}
+.headtop > section > .row > .row::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.sec2 {
+  width: 100%;
+  background-color: #f0eee5;
+}
+.sec2 > .row {
+  width: 100%;
+  justify-content: center;
+  align-content: space-evenly;
+  padding: 50px 40px;
+}
+.sec2 > .row > * {
+  margin-top: 30px;
+}
+.sec2 > .row > strong {
+  font-size: 40px;
+  color: black;
+}
+.sec2 > .row > p {
+  font-size: 20PX;
+  text-align: center;
+}
+.sec2 > .row > .row > article {
+  width: 600px;
+  height: 200vh;
+  margin: 0 40px;
+  justify-content: center;
+  background-color: white;
+}
+.sec2 > .row > .row > article:hover {
+  border: 4px solid #284b43;
+}
+.sec2 > .row > .row > article > *:not(span) {
+  margin-top: 50px;
+}
+.sec2 > .row > .row > article > figure {
+  margin-top: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.sec2 > .row > .row > article > figure:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.sec2 > .row > .row > article > figure:hover::before {
+  opacity: 1;
+}
+.sec2 > .row > .row > article > figure::after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(209, 130, 124, 0.6549019608);
+  transition: 1s;
+}
+.sec2 > .row > .row > article > figure::before {
+  content: "Book Now";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  top: 40%;
+  left: 33%;
+  opacity: 0;
+  color: white;
+  z-index: 4;
+  transition: 1s;
+}
+.sec2 > .row > .row > article > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sec2 > .row > .row > article > h3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+}
+.sec2 > .row > .row > article > h3:hover {
+  color: #bc3f31;
+  text-shadow: 1px 0 #bc3f31;
+  font-weight: bold;
+}
+.sec2 > .row > .row > article > p {
+  font-size: 15px;
+  text-align: center;
+}
+.sec2 > .row > .row > article > p:hover {
+  color: #bc3f31;
+  text-shadow: 1px 0 #bc3f31;
+  font-weight: bold;
+}
+.sec2 > .row > .row > article > ul {
+  width: 80%;
+  flex-wrap: wrap;
+}
+.sec2 > .row > .row > article > ul > li {
+  width: 50%;
+  margin: 10px auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  color: rgb(48, 47, 47);
+  border-bottom: 2px solid rgb(178, 173, 173);
+}
+.sec2 > .row > .row > article > ul > li:hover {
+  color: #bc3f31;
+  font-weight: bold;
+}
+.sec2 > .row > .row > article > a {
+  width: 200px;
+  height: 60px;
+  background-color: #d1827c;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 2px solid black;
+}
+.sec2 > .row > .row > article > a:hover {
+  color: #bc3f31;
+}
+.sec2 > .row > .row > article > a::after, .sec2 > .row > .row > article > a::before {
+  content: "";
+  position: absolute;
+  display: flex;
+  background-color: #f0eee5;
+  width: 100%;
+  height: 0;
+  transition: 0.5s;
+}
+.sec2 > .row > .row > article > a::before {
+  top: 0;
+  left: 0;
+}
+.sec2 > .row > .row > article > a::after {
+  content: "View This Room";
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.sec2 > .row > .row > article > a:hover::after, .sec2 > .row > .row > article > a:hover::before {
+  height: 100%;
+  opacity: 1;
+  font-weight: bold;
+}
+
+.sec3 {
+  margin-top: 30px;
+  width: 100%;
+  height: 80vh;
+  background-image: url(img/sec3/bg.jpg);
+  background-size: cover;
+  position: relative;
+}
+.sec3 > .dark {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(71, 129, 141, 0.9215686275);
+}
+.sec3 > .row {
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  position: relative;
+  z-index: 1;
+}
+.sec3 > .row > * {
+  color: white;
+}
+.sec3 > .row > div {
+  width: 400px;
+  height: 200px;
+  justify-content: start;
+  align-content: center;
+}
+.sec3 > .row > div:hover {
+  color: rgb(5, 5, 62);
+}
+.sec3 > .row > div > h4 {
+  font-size: 30px;
+  margin: 20px;
+}
+.sec3 > .row > div > p {
+  font-size: 20px;
+  text-align: justify;
+  padding: 20px;
+}
+
+.sec4 {
+  width: 100%;
+}
+.sec4 > .row > .row {
+  width: 100%;
+  padding: 50px;
+}
+.sec4 > .row > .row > * {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
+}
+.sec4 > .row > .row > strong {
+  font-size: 40px;
+  color: black;
+}
+.sec4 > .row > .row > p {
+  font-size: 20px;
+  color: gray;
+}
+.sec4 > .row > article {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec4 > .row > article > figure {
+  width: 40%;
+}
+.sec4 > .row > article > figure:hover ~ .row {
+  background-color: #284b43;
+}
+.sec4 > .row > article > figure:hover ~ .row > * {
+  color: white;
+}
+.sec4 > .row > article > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 1s;
+}
+.sec4 > .row > article > figure > img:hover {
+  width: 130%;
+  height: 130%;
+}
+.sec4 > .row > article:nth-of-type(1) > .row {
+  transform: translateX(-100px);
+  width: 40%;
+  height: 400px;
+  background-color: #f0eee5;
+  justify-content: center;
+  align-content: center;
+}
+.sec4 > .row > article:nth-of-type(1) > .row > *:not(a) {
+  color: black;
+}
+.sec4 > .row > article:nth-of-type(1) > .row > * {
+  margin: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec4 > .row > article:nth-of-type(1) > .row > strong {
+  font-size: 40px;
+}
+.sec4 > .row > article:nth-of-type(1) > .row > p {
+  font-size: 20px;
+}
+.sec4 > .row > article:nth-of-type(1) > .row > a {
+  position: relative;
+  width: 250px;
+  height: 60px;
+  background-color: #d1827c;
+  color: white;
+  font-size: 20px;
+}
+.sec4 > .row > article:nth-of-type(1) > .row > a:hover > span:nth-of-type(1) {
+  top: -60px;
+  opacity: 0;
+  visibility: hidden;
+}
+.sec4 > .row > article:nth-of-type(1) > .row > a:hover > span:nth-of-type(2) {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+  color: white;
+}
+.sec4 > .row > article:nth-of-type(1) > .row > a > span {
+  width: 100%;
+  height: 100%;
+  color: black;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.sec4 > .row > article:nth-of-type(1) > .row > a > span:nth-of-type(1) {
+  top: 0;
+  left: 0;
+}
+.sec4 > .row > article:nth-of-type(1) > .row > a > span:nth-of-type(2) {
+  top: -60px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.sec4 > .row > article:nth-of-type(2):hover > figure > img {
+  width: 80%;
+  height: 80%;
+}
+.sec4 > .row > article:nth-of-type(2) > .row {
+  transform: translateX(100px);
+  width: 40%;
+  height: 400px;
+  background-color: #f0eee5;
+  justify-content: center;
+  align-content: center;
+}
+.sec4 > .row > article:nth-of-type(2) > .row:hover {
+  background-color: #284b43;
+}
+.sec4 > .row > article:nth-of-type(2) > .row > *:not(a) {
+  color: black;
+}
+.sec4 > .row > article:nth-of-type(2) > .row > * {
+  margin: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec4 > .row > article:nth-of-type(2) > .row > strong {
+  font-size: 40px;
+}
+.sec4 > .row > article:nth-of-type(2) > .row > p {
+  font-size: 20px;
+}
+.sec4 > .row > article:nth-of-type(2) > .row > a {
+  position: relative;
+  width: 250px;
+  height: 60px;
+  background-color: #d1827c;
+  color: white;
+  font-size: 20px;
+}
+.sec4 > .row > article:nth-of-type(2) > .row > a:hover > span:nth-of-type(1) {
+  top: -60px;
+  opacity: 0;
+  visibility: hidden;
+}
+.sec4 > .row > article:nth-of-type(2) > .row > a:hover > span:nth-of-type(2) {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+  color: white;
+}
+.sec4 > .row > article:nth-of-type(2) > .row > a > span {
+  width: 100%;
+  height: 100%;
+  color: black;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.sec4 > .row > article:nth-of-type(2) > .row > a > span:nth-of-type(1) {
+  top: 0;
+  left: 0;
+}
+.sec4 > .row > article:nth-of-type(2) > .row > a > span:nth-of-type(2) {
+  top: -60px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.footer > .row > .row {
+  width: 100%;
+}
+.footer > .row > .row:nth-of-type(1) {
+  height: 300px;
+  position: relative;
+  z-index: 3;
+}
+.footer > .row > .row:nth-of-type(1) > div {
+  width: 20%;
+  height: 300px;
+  background-size: cover;
+  transition: 1s;
+}
+.footer > .row > .row:nth-of-type(1) > div:hover {
+  transform: scale(0.7);
+}
+.footer > .row > .row:nth-of-type(1) > div:nth-of-type(1) {
+  background-image: url(img/sec5/1.jpg);
+}
+.footer > .row > .row:nth-of-type(1) > div:nth-of-type(2) {
+  background-image: url(img/sec5/2.jpg);
+}
+.footer > .row > .row:nth-of-type(1) > div:nth-of-type(3) {
+  background-image: url(img/sec5/3.jpg);
+}
+.footer > .row > .row:nth-of-type(1) > div:nth-of-type(4) {
+  background-image: url(img/sec5/4.jpg);
+}
+.footer > .row > .row:nth-of-type(1) > div:nth-of-type(5) {
+  background-image: url(img/sec5/5.jpg);
+}
+.footer > .row > .row:nth-of-type(2) {
+  background-image: url(img/sec5/bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 400px;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.footer > .row > .row:nth-of-type(2) > * {
+  color: #284b43;
+}
+.footer > .row > .row:nth-of-type(2) > .row {
+  margin-top: 30px;
+  padding: 20px 40px;
+  width: 400px;
+  height: 100%;
+}
+.footer > .row > .row:nth-of-type(2) > .row > input {
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+}
+.footer > .row > .row:nth-of-type(2) > .row > input:hover {
+  background-color: rgba(185, 181, 141, 0.831372549);
+  color: white;
+}
+.footer > .row > .row:nth-of-type(2) > .row > a {
+  width: 300px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  transition: 0.4s;
+}
+.footer > .row > .row:nth-of-type(2) > .row > a:Hover {
+  background-color: #284b43;
+  color: white;
+  font-weight: bold;
+  border: 3px solid white;
+}
+.footer > .row > .row:nth-of-type(2) > .row > h5 {
+  font-size: 50px;
+}
+.footer > .row > .row:nth-of-type(2) > .row > p {
+  font-size: 20px;
+}
+
+.footer2 {
+  width: 100%;
+  margin-top: 50px;
+  background-color: white;
+  color: black;
+}
+.footer2 > .row {
+  align-content: center;
+}
+.footer2 > .row > .row {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.footer2 > .row > .row > figure {
+  width: 200px;
+  overflow: hidden;
+}
+.footer2 > .row > .row > figure > img {
+  width: 100%;
+  height: 100%;
+}
+.footer2 > .row > .row > li {
+  margin: 10px;
+  width: 30%;
+}
+.footer2 > .row > .row > li > a {
+  font-size: 20px;
+  color: black;
+}
+.footer2 > .row > .row > li > a:hover {
+  color: gray;
+  transform: scale(1.1);
+}
+.footer2 > .row > .row > li > a > i {
+  transition: 0.4s;
+  color: black;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.footer2 > .row > .row > li:hover {
+  color: gray;
+}/*# sourceMappingURL=master.css.map */
